@@ -1,0 +1,20 @@
+# 系統生成檔案
+.DS_Store           # macOS 系統檔案
+Thumbs.db           # Windows 縮圖檔案
+*.swp               # Vim 臨時檔案
+*.bak               # 備份檔案
+*.tmp               # 通用臨時檔案
+
+# 日誌檔案
+*.log
+logs/
+*.log.*
+
+# 環境設定
+.env                # 環境變數檔案
+.env.local
+.env.development
+.env.production
+
+# 編輯器設定
+.vscode/           # VSCode 設定檔案

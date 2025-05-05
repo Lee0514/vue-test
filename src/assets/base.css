@@ -1,0 +1,96 @@
+/* CSS Reset - Tailwind 兼容版本 */
+/* 重置所有元素的邊框盒模型 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 重置默認間距 */
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* 重置字體和行高 */
+html {
+  font-size: 16px; /* 與 Tailwind 默認一致 */
+  line-height: 1.5; /* 與 Tailwind 默認一致 */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 重置 body */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; /* 與 Tailwind 默認一致 */
+  background-color: #ffffff;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 重置列表 */
+ol, ul {
+  list-style: none;
+}
+
+/* 重置圖片和媒體 */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 重置鏈接 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 重置表單元素 */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 重置表格 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 清除浮動 */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
